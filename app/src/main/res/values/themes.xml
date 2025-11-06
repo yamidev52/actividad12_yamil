@@ -3,7 +3,13 @@
     <style name="Base.Theme.Mapas" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorSecondary">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent_orange</item>
+
+        <item name="fontFamily">@font/monserrat</item>
     </style>
+
 
     <style name="Theme.Mapas" parent="Base.Theme.Mapas" />
 </resources>
