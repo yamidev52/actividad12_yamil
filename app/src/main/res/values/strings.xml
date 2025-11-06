@@ -1,3 +1,26 @@
 <resources>
-    <string name="app_name">Mapas</string>
+    <string name="app_name">Autenticación Biométrica</string>
+
+    <!-- Textos de la interfaz -->
+    <string name="auth_title">Autenticación Biométrica</string>
+    <string name="auth_description">Utiliza tu huella digital para acceder de forma segura</string>
+    <string name="authenticate_button">Autenticar con huella</string>
+    <string name="ready_to_authenticate">Listo para autenticar</string>
+
+    <!-- Estados de autenticación -->
+    <string name="auth_success">✅ Autenticación exitosa</string>
+    <string name="auth_failed">❌ Autenticación fallida</string>
+    <string name="auth_error">⚠️ Error en la autenticación</string>
+    <string name="auth_canceled">🚫 Autenticación cancelada</string>
+
+    <!-- Mensajes del BiometricPrompt -->
+    <string name="biometric_prompt_title">Verificación biométrica</string>
+    <string name="biometric_prompt_subtitle">Usa tu huella digital para continuar</string>
+    <string name="biometric_prompt_description">Coloca tu dedo en el sensor de huella digital</string>
+    <string name="biometric_prompt_negative_button">Cancelar</string>
+
+    <!-- Mensajes de error -->
+    <string name="biometric_not_supported">La autenticación biométrica no está disponible</string>
+    <string name="biometric_not_enrolled">No hay huellas registradas en el dispositivo</string>
+    <string name="biometric_no_hardware">No se detectó hardware biométrico</string>
 </resources>

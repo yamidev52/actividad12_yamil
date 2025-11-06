@@ -1,19 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/primary_blue"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <!-- Contenedor principal -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_margin="24dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp">
+
+            <!-- Icono de huella digital -->
+            <ImageView
+                android:id="@+id/fingerprintIcon"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="24dp"
+                android:src="@drawable/ic_fingerprint"
+                android:tint="@color/primary_blue"
+                app:tint="@color/primary_blue" />
+
+            <!-- Título -->
+            <TextView
+                android:id="@+id/titleText"
+                style="@style/TitleText"
+                android:layout_gravity="center"
+                android:text="@string/auth_title" />
+
+            <!-- Descripción -->
+            <TextView
+                android:id="@+id/descriptionText"
+                style="@style/DescriptionText"
+                android:layout_gravity="center"
+                android:text="@string/auth_description" />
+
+            <!-- Estado de autenticación -->
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:text="@string/ready_to_authenticate"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+
+            <!-- Botón de autenticación -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/authenticateButton"
+                style="@style/CustomButton"
+                android:text="@string/authenticate_button"
+                app:icon="@drawable/ic_fingerprint"
+                app:iconGravity="textStart" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
