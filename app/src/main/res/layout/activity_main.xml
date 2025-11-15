@@ -34,20 +34,23 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="24dp"
                 android:src="@drawable/ic_fingerprint"
-                android:tint="@color/primary_blue"
                 app:tint="@color/primary_blue" />
 
             <!-- Título -->
             <TextView
                 android:id="@+id/titleText"
-                style="@style/TitleText"
+                style="@style/Base.Theme.Mapas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/auth_title" />
 
             <!-- Descripción -->
             <TextView
                 android:id="@+id/descriptionText"
-                style="@style/DescriptionText"
+                style="@style/Base.Theme.Mapas"
+                android:layout_width="213dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/auth_description" />
 
@@ -57,16 +60,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
-                android:fontFamily="@font/roboto_regular"
+                android:fontFamily="@font/monserrat"
                 android:gravity="center"
                 android:text="@string/ready_to_authenticate"
-                android:textColor="@color/text_secondary"
+                android:textColor="@color/accent_orange"
                 android:textSize="14sp" />
 
             <!-- Botón de autenticación -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/authenticateButton"
-                style="@style/CustomButton"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
                 android:text="@string/authenticate_button"
                 app:icon="@drawable/ic_fingerprint"
                 app:iconGravity="textStart" />

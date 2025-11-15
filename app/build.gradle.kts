@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace = "com.yamidev.mapas"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.yamidev.mapas"
         minSdk = 30
-        targetSdk = 35
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
@@ -45,6 +45,7 @@ dependencies {
     implementation ("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation ("androidx.biometric:biometric:1.1.0")
     implementation ("androidx.vectordrawable:vectordrawable:1.1.0")
+    implementation ("androidx.biometric:biometric:1.2.0-alpha05")
 
 
 }
