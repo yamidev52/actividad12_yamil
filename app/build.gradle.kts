@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace = "com.yamidev.mapas"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.yamidev.mapas"
         minSdk = 30
-        targetSdk = 35
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
@@ -40,9 +40,12 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    implementation("com.google.android.gms:play-services-maps:18.0.2")
-    implementation("com.google.android.gms:play-services-location:19.0.1")
-    implementation("androidx.appcompat:appcompat:1.7.1")
-    implementation("androidx.constraintlayout:constraintlayout:2.2.1")
-    implementation("andoidx.core:core-ktx:1.10.1")
+    implementation ("androidx.appcompat:appcompat:1.6.1")
+    implementation ("com.google.android.material:material:1.10.0")
+    implementation ("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation ("androidx.biometric:biometric:1.1.0")
+    implementation ("androidx.vectordrawable:vectordrawable:1.1.0")
+    implementation ("androidx.biometric:biometric:1.2.0-alpha05")
+
+
 }
